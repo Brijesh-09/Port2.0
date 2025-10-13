@@ -2,8 +2,8 @@
 
 export const ExperinceCard = ({ title, responsibilities, tags }) => {
   return (
-    <div className="bg-black rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
-      <h2 className="text-2xl text-red-400 font-semibold mb-4">{title}</h2>
+    <div className=" rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 ">
+      <h2 className="text-2xl text-red-200 font-semibold mb-4">{title}</h2>
 
       <h3 className="text-xl text-gray-300 font-medium mb-2">Responsibilities:</h3>
       <ul className="list-disc list-inside text-gray-400 mb-4 space-y-1">

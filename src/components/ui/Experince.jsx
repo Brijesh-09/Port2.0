@@ -4,9 +4,9 @@ import { ExperinceCard } from "./ExperinceCard"
 
 export const Experince = () => {
   return (
-    <div className="bg-gray-900 px-6 md:px-20 py-20">
+    <div style={{ backgroundColor: '#1C1C1C' }} className="px-6 md:px-20 py-20">
       <div>
-        <h2 className="text-5xl sm:text-6xl md:text-8xl font-sans font-semibold text-gray-500">
+        <h2 className="text-6xl lg:text-7xl font-bold text-gray-400 leading-tight">
           Experience
         </h2>
         <p className="text-xl sm:text-2xl md:text-4xl mt-6 font-semibold text-white pt-8 md:pt-16">
@@ -70,9 +70,13 @@ export const Experince = () => {
             <ExperinceCard
               title="Jr. DevOps Engineer"
               responsibilities={[
-                "Deployed and managed MERN and WordPress websites on LAMP environments, optimizing server configurations for high availability and performance.",
-                "Automated workflows using AWS S3 for CDN delivery, cronjobs for backups, and SSL for secure connections to enhance reliability and security.",
-                "Configured servers and infrastructure to ensure zero downtime and fast loading for websites. Deployed and maintained a serverless, auto-scaling architecture for WordPress websites, with multi-level security implemented via Cloudflare."
+                "Working with Databases like Redis and MongoDB Atlas",
+                "Developed and maintained automated CI/CD pipelines for code deployment using Jenkins",
+                "Provisioned Servers and deployed features using Terraform",
+                "Working with CDN, Monitoring Nginx Metrics using Prometheus",
+                "Auto-scaling pods using Kube metrics - Limits and resources to prevent pods crashing",
+                "Infrastructure Monitoring and Alerting using Prometheus and Grafana",
+                "Setup and Migration from Standalone MongoDB to Atlas"
               ]}
               tags={["Digital Ocean", "AWS", "Cloudflare"]}
             />

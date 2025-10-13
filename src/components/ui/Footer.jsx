@@ -34,7 +34,8 @@ export const Footer = () => {
   return (
     <div
       ref={footerRef}
-      className="relative bg-black text-center py-16 overflow-hidden"
+      style={{ backgroundColor: '#1C1C1C' }}
+      className="relative text-center py-16 overflow-hidden"
     >
       <div className="relative inline-block text-6xl sm:text-7xl md:text-9xl font-extrabold font-sans">
         {/* Stroke text (outline only) */}
@@ -49,7 +50,7 @@ export const Footer = () => {
 
         {/* Fill text, masked by clipPath */}
         <span
-          className="absolute left-0 top-0 w-full text-white overflow-hidden"
+          className="absolute left-0 top-0 w-full text-red-200 overflow-hidden"
           style={{
             height: '100%',
             clipPath: `inset(${100 - fillHeight}% 0 0 0)`,

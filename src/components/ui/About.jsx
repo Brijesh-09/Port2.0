@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 
 export const About = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="bg-gray-900 w-full px-6 md:px-12 lg:px-24 py-24">
-      <h1 className="text-6xl sm:text-7xl md:text-8xl font-sans font-semibold text-gray-500 gsap-fade-up">
+    <section ref={ref} id='about' style={{ backgroundColor: '#1C1C1C' }}className="w-full px-6 md:px-12 lg:px-24 py-24">
+      <h1 className="text-6xl lg:text-7xl font-bold text-gray-400 leading-tight">
         About
       </h1>
 

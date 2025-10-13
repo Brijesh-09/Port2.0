@@ -26,30 +26,30 @@ export function Globe({ className }) {
     window.addEventListener("resize", onResize);
     onResize();
 
-   const globe = createGlobe(canvasRef.current, {
-  devicePixelRatio: 2,
-  width: width * 2,
-  height: width * 2,
-  phi: 0,
-  theta: 0.3,
-  dark: 1, // Enables dark mode
-  diffuse: 1.2, // Boost contrast
-  mapSamples: 16000,
-  mapBrightness: 0.2, // Darker look
-  baseColor: [1, 1, 1], // Dark gray/black globe
-  glowColor: [1, 0.5, 0.5],    // light red (R=1, G=0.5, B=0.5)
-markerColor: [1, 0.5, 0.5],  // same light red for markers
-  markers: [
-    { location: [14.5995, 120.9842], size: 0.03 },
-    { location: [19.076, 72.8777], size: 0.1 },
-  ],
-  onRender: (state) => {
-    if (!pointerInteracting.current) phi += 0.005;
-    state.phi = phi + rs.get();
-    state.width = width * 2;
-    state.height = width * 2;
-  },
-});
+        const globe = createGlobe(canvasRef.current, {
+        devicePixelRatio: 2,
+        width: width * 2,
+        height: width * 2,
+        phi: 0,
+        theta: 0.3,
+        dark: 1, // Enables dark mode
+        diffuse: 1, // Boost contrast
+        mapSamples: 16000,
+        mapBrightness: 1, // Darker look
+        baseColor: [1, 1, 1], // Dark gray/black globe
+        glowColor: [1, 0.5, 0.5],    // light red (R=1, G=0.5, B=0.5)
+      markerColor: [1, 0.5, 0.5],  // same light red for markers
+        markers: [
+          { location: [14.5995, 120.9842], size: 0.03 },
+          { location: [19.076, 72.8777], size: 0.1 },
+        ],
+        onRender: (state) => {
+          if (!pointerInteracting.current) phi += 0.005;
+          state.phi = phi + rs.get();
+          state.width = width * 2;
+          state.height = width * 2;
+        },
+      });
 
 
     if (canvasRef.current) canvasRef.current.style.opacity = "1";
