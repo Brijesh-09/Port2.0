@@ -38,7 +38,7 @@ export const Connect = () => {
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm sm:text-base">
           <a
             className="text-gray-500 hover:text-white transition"
-            href="https://github.com/your-username"
+            href="https://github.com/Brijesh-09"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +46,7 @@ export const Connect = () => {
           </a>
           <a
             className="text-gray-500 hover:text-white transition"
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/brijesh-kori-049a2b203/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +54,7 @@ export const Connect = () => {
           </a>
           <a
             className="text-gray-500 hover:text-white transition"
-            href="https://twitter.com/your-handle"
+            href="https://brijeshkori.hashnode.dev/"
             target="_blank"
             rel="noopener noreferrer"
           >
